@@ -1,0 +1,93 @@
+<html>
+
+
+<!--  Programmer : Maya Ahmed 
+      Codes for making a blinking text Greeting card.
+      Date: "September 07 2016" -->
+
+<head>
+    <!-- fill iPhone screen with canvas -->
+    <meta name="viewport" content="width=400" />
+    <title>Beating Heart  Card</title>
+<style>
+#cardDiv{
+position: fixed;
+
+height:150px; width:200px; 
+
+background: black; border: 1px white; border-radius:25px; font-size: 16px; 
+
+
+}
+
+body{ background: gray; color: white; text-align:center; }
+
+/* Pulse class and keyframe animation */
+
+/* medium */
+
+.pulseitm{
+	-webkit-animation: pulsem linear .5s infinite;
+	animation: pulsem linear .5s infinite;
+}
+@-webkit-keyframes pulsem {
+	0% { width:50px; } 
+	50% { width:60px; } 
+	100% { width:50px; }
+}
+@keyframes pulsem {
+	0% { width:50px; height: 50px; } 
+	50% { width:60px; height: 60px; } 
+	100% { width:50px; height: 50px}
+}
+
+/* small */
+.pulseits{
+	-webkit-animation: pulses linear .5s infinite;
+	animation: pulses linear .5s infinite;
+}
+@-webkit-keyframes pulses{
+	0% { width:30px; } 
+	50% { width:40px; } 
+	100% { width:30px; }
+}
+@keyframes pulses {
+	0% { width:30px; height: 30px; } 
+	50% { width:40px; height: 40px; } 
+	100% { width:30px; height: 30px}
+}
+
+/* very small */
+.pulseitvs{
+	-webkit-animation: pulsevs linear .5s infinite;
+	animation: pulsevs linear .5s infinite;
+}
+@-webkit-keyframes pulsevs{
+	0% { width:50px; } 
+	50% { width:60px; } 
+	100% { width:50px; }
+}
+@keyframes pulsevs {
+	0% { width: 20px; height: 20px; } 
+	50% { width:25px; height: 25px; } 
+	100% { width:20px; height: 20px}
+}
+
+
+
+
+</style>  
+</head>
+
+<body onload="appear()">
+    
+<div id="cardDiv">
+
+<h1 > Love </h1>
+<img class="pulseitm" src="heart.png" alt="Heart" >
+    <img class="pulseits" src="heart.png" alt="Heart" >
+<img class="pulseitvs" src="heart.png" alt="Heart" >
+</div>
+
+</body>
+</html>
